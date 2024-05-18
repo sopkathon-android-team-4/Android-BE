@@ -14,7 +14,7 @@
 
 ## 2. API 명세서와 역할 분배 (각자 개발 담당 부분)
 
-### [API 명세서] (https://bitter-plane-3af.notion.site/API-212085ba7c4041e7805caae9c0ec5edb?pvs=4)
+### [API 명세서](https://bitter-plane-3af.notion.site/API-212085ba7c4041e7805caae9c0ec5edb?pvs=4)
 
 | [김혁진](https://github.com/hyukjinKimm) | [나세빈](https://github.com/sebbbin) |
 | --- | --- |
