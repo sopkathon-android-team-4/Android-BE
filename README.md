@@ -100,5 +100,6 @@ ex) UserController
 그 외 모든 변수명은 **lowerCamelCase** 사용
 # 5. 프로젝트 폴더링
 # 6. ERD 캡쳐 사진
-![image](https://github.com/sopkathon-android-team-4/Android-BE/assets/107605573/0a59cf13-ad84-4eab-9236-637dda3d2bee)
+![image](https://github.com/sopkathon-android-team-4/Android-BE/assets/107605573/f78d0960-0091-4c88-bc64-f5de15d62b1a)
+
 
