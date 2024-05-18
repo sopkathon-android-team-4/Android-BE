@@ -24,8 +24,9 @@ public class MemberService {
         return MemberPostResponseDto.of(member);
     }
 
+    @Transactional
     public MemberFindDto findMemberById(Long memberId) {
         return MemberFindDto.of(memberRepository.findById(memberId).get());
     }
-    
+
 }
