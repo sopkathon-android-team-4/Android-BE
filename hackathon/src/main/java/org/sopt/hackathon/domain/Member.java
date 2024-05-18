@@ -33,6 +33,15 @@ public class Member {
     @Column(nullable = false)
     private String mbti;
 
+    private Member(String memberName, String age, String mbti) {
+        this.memberName = memberName;
+        this.age = age;
+        this.mbti = mbti;
+    }
+
+    public static Member create(String memberName, String age, String mbti) {
+        return new Member(memberName, age, mbti);
+    }
 
 }
 
