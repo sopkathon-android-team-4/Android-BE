@@ -4,15 +4,14 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.sopt.hackathon.common.dto.SuccessMessage;
 import org.sopt.hackathon.common.dto.SuccessStatusResponse;
-import org.sopt.hackathon.dto.AnswerResponse;
+import org.sopt.hackathon.domain.Answer;
+import org.sopt.hackathon.dto.response.AnswerResponseDto;
 import org.sopt.hackathon.service.AnswerService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -29,11 +28,25 @@ public class AnswerController {
             """)
     @GetMapping("/answers")
     public ResponseEntity<SuccessStatusResponse> getAnswerById(@RequestHeader Long concernId) {
-        AnswerResponse answerResponse = answerService.getAnswerById(concernId);
+        AnswerResponseDto answerResponseDto = answerService.getAnswerById(concernId);
         return ResponseEntity.ok(SuccessStatusResponse.of(
                 SuccessMessage.LUCKY_ANSWER_SUCCESS.getStatus(),
                 SuccessMessage.LUCKY_ANSWER_SUCCESS.getMessage(),
-                answerResponse
+                answerResponseDto
         ));
     }
+
+    @GetMapping("/answers/{memberId}/list")
+    public ResponseEntity<SuccessStatusResponse> getAnswerList(@PathVariable Long memberId) {
+        List<Answer> answers = answerService.findAnswersByConcernCount(memberId);
+        List<AnswerResponseDto> answerResponseDtoList = answers.stream()
+                .map(answer -> new AnswerResponseDto(answer.getContent())) // getContent()는 예시
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(SuccessStatusResponse.of(
+                SuccessMessage.LUCKY_ANSWER_SUCCESS.getStatus(),
+                SuccessMessage.LUCKY_ANSWER_SUCCESS.getMessage(),
+                answerResponseDtoList
+        ));
+    }
+
 }
