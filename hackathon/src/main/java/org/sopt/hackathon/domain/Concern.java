@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.lang.reflect.Member;
 
 @Entity
 @NoArgsConstructor
@@ -26,6 +25,6 @@ public class Concern {
     @Builder
     public Concern(String content, Member member){
         this.content = content;
-        this.member = member;
+
     }
 }
