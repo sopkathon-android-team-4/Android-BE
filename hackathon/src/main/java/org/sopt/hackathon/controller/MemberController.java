@@ -1,5 +1,6 @@
 package org.sopt.hackathon.controller;
 
+import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import org.sopt.hackathon.common.dto.SuccessMessage;
 import org.sopt.hackathon.common.dto.SuccessStatusResponse;
@@ -19,6 +20,11 @@ public class MemberController {
 
     private final MemberService memberService;
 
+    @Operation(summary = "멤버 생성", description = """
+            멤버 등록에 성공하면
+            "201 Created 멤버 생성이 럭키쌈뽕하게 완료되었습니다." 반환
+            memberId 반환
+            """)
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
     public SuccessStatusResponse createMember(
