@@ -43,8 +43,8 @@ public class AnswerController {
                 .map(answer -> new AnswerResponseDto(answer.getContent())) // getContent()는 예시
                 .collect(Collectors.toList());
         return ResponseEntity.ok(SuccessStatusResponse.of(
-                SuccessMessage.LUCKY_ANSWER_SUCCESS.getStatus(),
-                SuccessMessage.LUCKY_ANSWER_SUCCESS.getMessage(),
+                SuccessMessage.LUCKY_ANSWER_LIST_SUCCESS.getStatus(),
+                SuccessMessage.LUCKY_ANSWER_LIST_SUCCESS.getMessage(),
                 answerResponseDtoList
         ));
     }
