@@ -31,6 +31,6 @@ public class Concern {
     @Builder
     public Concern(String content, Member member) {
         this.content = content;
-
+        this.member = member;
     }
 }
