@@ -1,4 +1,4 @@
-package org.sopt.hackathon.member.domain;
+package org.sopt.hackathon.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -29,6 +29,9 @@ public class Member {
 
     @Column(nullable = false)
     private String age;
+
+    @Column(nullable = false)
+    private String mbti;
 
 
 }
