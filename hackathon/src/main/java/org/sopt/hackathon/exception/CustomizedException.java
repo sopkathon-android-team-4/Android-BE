@@ -1,6 +1,7 @@
 package org.sopt.hackathon.exception;
 
-import com.sopt.airbnb.common.dto.ErrorMessage;
+
+import org.sopt.hackathon.common.dto.ErrorMessage;
 
 public class CustomizedException extends BusinessException {
 
