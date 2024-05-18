@@ -12,6 +12,7 @@ public enum SuccessMessage {
     MEMBER_CREATE_SUCCESS(HttpStatus.CREATED.value(), "멤버 생성이 럭키쌈뽕하게 완료되었습니다."),
     LUCKY_ANSWER_SUCCESS(HttpStatus.OK.value(), "럭키럭키 체인지가 성공하다니 완전 럭키비키잖앙🍀"),
     MEMBER_FIND_SUCCESS(HttpStatus.OK.value(), "멤버 조회가 럭키쌈뽕하게 성공했습니다."),
+    CONCERN_CREATE_SUCCESS(HttpStatus.CREATED.value(), "걱정 생성이 럭키쌈뽕하게 완료되었습니다."),
 
     ;
 
