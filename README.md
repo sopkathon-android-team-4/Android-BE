@@ -13,10 +13,25 @@
 어느 상황, 어느 감정이 들어도 이를 극복하여 사람들의 **감정 회복 탄력성**을 길러 줄 수 있다.
 
 ## 2. API 명세서와 역할 분배 (각자 개발 담당 부분)
-| https://github.com/hyukjinKimm | https://github.com/sebbbin |
+
+### [API 명세서] (https://bitter-plane-3af.notion.site/API-212085ba7c4041e7805caae9c0ec5edb?pvs=4)
+
+| [김혁진](https://github.com/hyukjinKimm) | [나세빈](https://github.com/sebbbin) |
 | --- | --- |
-|  |  |
+|  <img width="400" alt="image" src="https://github.com/sopkathon-android-team-4/Android-BE/assets/94737768/864cf7d9-0a96-489f-9f96-d20d0b68a814">|  <img width="400" alt="image" src="https://github.com/sopkathon-android-team-4/Android-BE/assets/94737768/02b961f5-7b22-438b-895f-cea526928700">|
 | 럭키지니 api개발 | 럭키비니 api개발 |
+
+**김혁진**
+- aws/rds 세팅
+- 멤버 생성 api
+- 걱정 저장 api
+- 멤버 프로필 조회 api
+
+**나세빈**
+- 스프링 초기 세팅
+- 스웨거 세팅
+- 럭키 메시지 반환 api
+- 럭키 체인지 리스트 반환 api
 
 ## 3. 코드 컨벤션
 ### 📌 네이밍 규칙
