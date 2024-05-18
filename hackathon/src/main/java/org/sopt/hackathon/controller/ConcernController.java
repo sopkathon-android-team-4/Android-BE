@@ -23,7 +23,7 @@ public class ConcernController {
 
     @Operation(summary = "걱정 생성", description = """
             걱정 등록에 성공하면
-            "201 Created 걱정 생성이 럭키쌈뽕하게 완료되었습니다." 반환
+            "201 Created 걱정 생성이 럭키쌈뽕하게 완료되었습니다." 반환 \n
             concernId 반환
             """)
     @ResponseStatus(HttpStatus.CREATED)
