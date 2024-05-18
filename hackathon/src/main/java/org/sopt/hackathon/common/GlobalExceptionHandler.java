@@ -1,9 +1,10 @@
 package org.sopt.hackathon.common;
 
-import com.sopt.airbnb.common.dto.ErrorMessage;
-import com.sopt.airbnb.common.dto.ErrorResponse;
-import com.sopt.airbnb.exception.CustomizedException;
-import com.sopt.airbnb.exception.NotFoundException;
+
+import org.sopt.hackathon.common.dto.ErrorMessage;
+import org.sopt.hackathon.common.dto.ErrorResponse;
+import org.sopt.hackathon.exception.CustomizedException;
+import org.sopt.hackathon.exception.NotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
