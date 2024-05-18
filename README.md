@@ -1,6 +1,24 @@
-# 1. 서비스 이름과 소개
-# 2. API 명세서와 역할 분배 (각자 개발 담당 부분)
-# 3. 코드 컨벤션
+## 1. 서비스 이름과 소개
+**`서비스명`**
+<br>
+🍀 **럭키 럭키 체인지 a.k.a. 럭럭체**
+
+**`서비스 설명`**
+<br>
+🍀 불행한 상황들을 적으면 럭키한 초긍정적 사고로 변환해주는 서비스
+
+**`가치제안`**
+<br>
+어떠한 상황도 **초긍정적으로 치환**하는 자세를 형성해줄 수 있다.
+어느 상황, 어느 감정이 들어도 이를 극복하여 사람들의 **감정 회복 탄력성**을 길러 줄 수 있다.
+
+## 2. API 명세서와 역할 분배 (각자 개발 담당 부분)
+| https://github.com/hyukjinKimm | https://github.com/sebbbin |
+| --- | --- |
+|  |  |
+| 럭키지니 api개발 | 럭키비니 api개발 |
+
+## 3. 코드 컨벤션
 ### 📌 네이밍 규칙
 
 - lowerCamelCase 사용
@@ -98,8 +116,11 @@ ex) UserController
 ```
 
 그 외 모든 변수명은 **lowerCamelCase** 사용
-# 5. 프로젝트 폴더링
-# 6. ERD 캡쳐 사진
+
+## 5. 프로젝트 폴더링
+<img width="388" alt="image" src="https://github.com/sopkathon-android-team-4/Android-BE/assets/94737768/0635620f-e1c0-443d-b77d-9461151c559d">
+
+## 6. ERD 캡쳐 사진
 ![image](https://github.com/sopkathon-android-team-4/Android-BE/assets/107605573/f78d0960-0091-4c88-bc64-f5de15d62b1a)
 
 
