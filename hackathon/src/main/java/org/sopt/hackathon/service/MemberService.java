@@ -3,6 +3,7 @@ package org.sopt.hackathon.service;
 import lombok.RequiredArgsConstructor;
 import org.sopt.hackathon.domain.Member;
 import org.sopt.hackathon.dto.MemberCreateDto;
+import org.sopt.hackathon.dto.MemberFindDto;
 import org.sopt.hackathon.dto.MemberPostResponseDto;
 import org.sopt.hackathon.repository.MemberRepository;
 import org.springframework.stereotype.Service;
@@ -22,4 +23,9 @@ public class MemberService {
                 Member.create(memberCreateDto.name(), memberCreateDto.age(), memberCreateDto.mbti()));
         return MemberPostResponseDto.of(member);
     }
+
+    public MemberFindDto findMemberById(Long memberId) {
+        return MemberFindDto.of(memberRepository.findById(memberId).get());
+    }
+    
 }
