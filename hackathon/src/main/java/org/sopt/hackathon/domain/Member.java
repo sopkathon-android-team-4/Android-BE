@@ -33,6 +33,7 @@ public class Member {
     @Column(nullable = false)
     private String mbti;
 
+
     private Member(String memberName, String age, String mbti) {
         this.memberName = memberName;
         this.age = age;
