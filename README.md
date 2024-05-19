@@ -1,3 +1,5 @@
+# 우리 우수상이라니 완전 럭키비키잖아 😉
+
 ## 1. 서비스 이름과 소개
 **`서비스명`**
 <br>
@@ -15,6 +17,8 @@
 ## 2. API 명세서와 역할 분배 (각자 개발 담당 부분)
 
 ### [API 명세서](https://bitter-plane-3af.notion.site/API-212085ba7c4041e7805caae9c0ec5edb?pvs=4)
+<img width="1405" alt="image" src="https://github.com/sopkathon-android-team-4/Android-BE/assets/94737768/5add064c-a12f-4a95-a794-92db7825bd70">
+
 
 | [김혁진](https://github.com/hyukjinKimm) | [나세빈](https://github.com/sebbbin) |
 | --- | --- |
